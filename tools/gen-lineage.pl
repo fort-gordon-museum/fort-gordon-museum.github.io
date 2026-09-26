@@ -223,7 +223,7 @@ for my $file (@files) {
 <body>
   <header class="bar">
     <div class="inner">
-      <a class="brand" href="../index.html">Fort Gordon Historical Museum Society</a>
+      <a class="brand" href="../index.html">Signal &amp; Cyber Corps Museum</a>
       <a class="back" href="index.html">All lineages &amp; honors &#8594;</a>
     </div>
   </header>
