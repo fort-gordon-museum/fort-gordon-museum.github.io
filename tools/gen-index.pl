@@ -85,7 +85,7 @@ my $page = <<"HTML";
 <body>
   <header class="bar">
     <div class="inner">
-      <a class="brand" href="../index.html">Signal &amp; Cyber Corps Museum</a>
+      <a class="brand" href="../index.html">Signal &amp; Cyber Corps Museum Society</a>
       <a class="back" href="../index.html#room-command-gallery">&#8592; Command Gallery</a>
     </div>
   </header>

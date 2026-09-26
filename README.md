@@ -1,6 +1,6 @@
-# Signal &amp; Cyber Corps Museum — Virtual Museum
+# Signal & Cyber Corps Museum Society — Virtual Museum
 
-The online museum of the **Signal and Cyber Museum Society (SCMS)**, formerly the
+The online museum of the **Signal & Cyber Corps Museum Society**, formerly the
 Fort Gordon Historical Museum Society — a 501(c)(3) of volunteers preserving the
 history of Americans who served at Fort Eisenhower (formerly Fort Gordon), in the
 Signal Regiment, and in the Army's Cyber Corps.
