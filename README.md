@@ -7,7 +7,7 @@ Signal Regiment, and in the Army's Cyber Corps.
 
 **Secure Our Story**
 
-- **Virtual museum:** https://fort-gordon-museum.github.io
+- **Virtual museum:** https://sc-museum.github.io
 - **Society:** https://www.signalandcybercorpsmuseum.org/en
 - **Donate:** https://givebutter.com/hpEeXi
 
