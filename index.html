@@ -4,6 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Signal &amp; Cyber Corps Museum Society — Virtual Museum</title>
+<meta name="description" content="The virtual museum of the Signal &amp; Cyber Corps Museum Society: the story of the U.S. Army Signal Corps and Cyber Corps, and the official lineage and honors of 171 Signal Regiment units. Secure Our Story.">
+<link rel="canonical" href="https://sc-museum.github.io/">
+<link rel="icon" type="image/png" href="seal.png">
+<link rel="apple-touch-icon" href="seal.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Signal &amp; Cyber Corps Museum Society">
+<meta property="og:title" content="Signal &amp; Cyber Corps Museum Society — Virtual Museum">
+<meta property="og:description" content="The story of the U.S. Army Signal Corps and Cyber Corps, and the official lineage and honors of 171 Signal Regiment units. Secure Our Story.">
+<meta property="og:url" content="https://sc-museum.github.io/">
+<meta property="og:image" content="https://sc-museum.github.io/seal.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Signal &amp; Cyber Corps Museum Society — Virtual Museum">
+<meta name="twitter:description" content="The story of the U.S. Army Signal Corps and Cyber Corps, and the official lineage and honors of 171 Signal Regiment units.">
+<meta name="twitter:image" content="https://sc-museum.github.io/seal.png">
+<meta name="theme-color" content="#0d1f16">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -226,6 +241,27 @@ p{margin:0 0 14px; font-size:15.5px;}
 }
 .subnav button.active{color:var(--ink); background:var(--gold); border-color:var(--gold); font-weight:600;}
 .subpanel{display:none;}
+/* ---- people roster (Honor Roll) ---- */
+.people-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:14px;}
+.person{
+  border:1px solid var(--hair); background:var(--panel); padding:16px 18px;
+  border-left:3px solid var(--hair);
+}
+.person.officer{border-left-color:var(--gold);}
+.person .nm{font-family:var(--serif); font-weight:600; font-size:17px; color:var(--paper-2); line-height:1.25;}
+.person .rl{
+  font-family:var(--mono); font-size:10.5px; letter-spacing:1px; text-transform:uppercase;
+  color:var(--gold); margin:6px 0 7px;
+}
+.person.officer .rl{color:var(--gold-bright);}
+.person .af{font-family:var(--sans); font-size:13px; color:var(--muted); line-height:1.5;}
+.person .svc{
+  font-family:var(--sans); font-size:12.5px; color:var(--paper); line-height:1.55;
+  margin-top:9px; padding-top:9px; border-top:1px solid rgba(255,255,255,0.07);
+}
+.person .svc a{color:var(--gold-bright);}
+.roster-note{font-size:13px; color:var(--muted); margin:0 0 22px; max-width:640px;}
+@media (max-width:640px){.people-grid{grid-template-columns:1fr;}}
 .subpanel.active{display:block;}
 
 /* ---------- Timeline ---------- */
@@ -277,7 +313,6 @@ p{margin:0 0 14px; font-size:15.5px;}
 .map-foot-link:hover{background:var(--gold) !important; color:var(--ink) !important;}
 
 /* people tabs */
-.people-grid{display:grid; grid-template-columns:1fr; gap:14px;}
 .donor-names{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;}
 .donor-names span{
   font-family:var(--mono); font-size:12px; background:rgba(201,162,39,0.12); color:var(--gold-bright);
@@ -1600,31 +1635,130 @@ a.cover:hover, a.cover:focus-visible{border-color:var(--gold);}
     </div>
 
     <div class="subpanel active" id="sub-staff">
-      <div class="placard">
-        <div class="tag">Exhibit opening soon</div>
-        <h4>Museum Staff</h4>
-        <p>This room is framed and ready for staff photos and bios — add names, titles, and portraits here.</p>
+      <div class="section">
+        <h3>Museum Staff</h3>
+        <p class="roster-note">The Society is run by volunteers. Its one full-time post keeps the collection, the campaign, and the membership moving between exhibits.</p>
+        <div class="people-grid">
+          <div class="person officer">
+            <div class="nm">Amy Tuschen</div>
+            <div class="rl">Executive Director</div>
+            <div class="af">Signal &amp; Cyber Corps Museum Society</div>
+          </div>
+        </div>
       </div>
     </div>
+
     <div class="subpanel" id="sub-board">
-      <div class="placard">
-        <div class="tag">Exhibit opening soon</div>
-        <h4>Board of Directors</h4>
-        <p>This room is framed and ready for board member photos and bios.</p>
+      <div class="section">
+        <h3>Board of Directors</h3>
+        <p class="roster-note">The volunteers who govern the Society, carry the campaign for a new museum building, and answer for the collection while it is in storage.</p>
+        <div class="people-grid">
+          <div class="person officer">
+            <div class="nm">Welton Chase, Jr.</div>
+            <div class="rl">Chairman of the Board</div>
+            <div class="af">Director, Customer Experience, Cisco</div>
+            <div class="svc">BG (Ret.). Commanded the <button type="button" data-goto="command-gallery" style="background:none; border:none; padding:0; color:var(--gold-bright); font:inherit; text-decoration:underline; cursor:pointer;">501st Signal Battalion in Iraq and the 1st Signal Brigade in Korea</button>, then 7th Signal Command (Theater).</div>
+          </div>
+          <div class="person officer">
+            <div class="nm">Laroy Peyton</div>
+            <div class="rl">Vice Chairman of the Board</div>
+            <div class="af">Customer Success, Cisco Systems, Inc.</div>
+          </div>
+          <div class="person officer">
+            <div class="nm">Shalisha Haynes</div>
+            <div class="rl">Treasurer</div>
+            <div class="af">Accountant, SME CPAs</div>
+          </div>
+          <div class="person officer">
+            <div class="nm">Amy Tuschen</div>
+            <div class="rl">Executive Director</div>
+            <div class="af">Signal &amp; Cyber Corps Museum Society</div>
+          </div>
+          <div class="person">
+            <div class="nm">Tom Washer</div>
+            <div class="rl">Director</div>
+            <div class="af">Customer Success Executive, Cisco (DoD Sector)</div>
+          </div>
+          <div class="person">
+            <div class="nm">Eric Toler</div>
+            <div class="rl">Director</div>
+            <div class="af">Executive Director, Georgia Cyber Center</div>
+          </div>
+          <div class="person">
+            <div class="nm">Pete Wilson</div>
+            <div class="rl">Director</div>
+            <div class="af">Customer Success Executive, Cisco Systems, Inc.</div>
+          </div>
+          <div class="person">
+            <div class="nm">Dr. Sly Cotton</div>
+            <div class="rl">Director</div>
+            <div class="af">Senior Strategic Advisor</div>
+          </div>
+          <div class="person">
+            <div class="nm">Donald Bray</div>
+            <div class="rl">Director</div>
+            <div class="af">Director, Cyber Operations, Raytheon</div>
+          </div>
+          <div class="person">
+            <div class="nm">James Parks</div>
+            <div class="rl">Director</div>
+            <div class="af">Associate Director, Collins Aerospace</div>
+          </div>
+          <div class="person">
+            <div class="nm">John Wilcox</div>
+            <div class="rl">Director</div>
+            <div class="af">Vice President, Strategic Initiatives, By Light Professional IT Services</div>
+          </div>
+          <div class="person">
+            <div class="nm">John McConnell</div>
+            <div class="rl">Director</div>
+            <div class="af">Founder, Military Retirement Podcast</div>
+          </div>
+        </div>
+        <p class="source-note">Board as published by the Society. Current roster and contact: <a class="ext-link" href="https://www.signalandcybercorpsmuseum.org/en/board-of-directors" target="_blank" rel="noopener">signalandcybercorpsmuseum.org ↗</a></p>
       </div>
     </div>
+
     <div class="subpanel" id="sub-advisors">
-      <div class="placard">
-        <div class="tag">Exhibit opening soon</div>
-        <h4>Council of Advisors</h4>
-        <p>This room is framed and ready for advisor photos and bios.</p>
+      <div class="section">
+        <h3>Council of Advisors</h3>
+        <p class="roster-note">Advisors bring the Signal Corps, the cyber industry, and the Augusta community to the table — including a former Chief of Signal who commanded the Signal Center on this post.</p>
+        <div class="people-grid">
+          <div class="person officer">
+            <div class="nm">Jeffery Foley</div>
+            <div class="rl">Lead Advisor</div>
+            <div class="af">CEO, Loral Mountain</div>
+            <div class="svc">BG (Ret.). The Army's <strong>34th Chief of Signal</strong> and Commanding General of the U.S. Army Signal Center and Fort Gordon, retiring in 2010 after 32 years.</div>
+          </div>
+          <div class="person">
+            <div class="nm">Ann Johnson</div>
+            <div class="rl">Advisory Council</div>
+            <div class="af">Corporate Vice President and Deputy CISO, Microsoft</div>
+          </div>
+          <div class="person">
+            <div class="nm">Dr. Tom Clark</div>
+            <div class="rl">Board Advisor</div>
+            <div class="af">Executive Director, Alliance for Fort Eisenhower</div>
+          </div>
+          <div class="person">
+            <div class="nm">Eric Y. Nishizawa</div>
+            <div class="rl">Board Advisor</div>
+            <div class="af">Owner, Law Offices of Eric Nishizawa</div>
+          </div>
+          <div class="person">
+            <div class="nm">Stuart M. Dyer</div>
+            <div class="rl">Board Advisor</div>
+            <div class="af">CEO/President, Cahaba Defense Consulting LLC</div>
+          </div>
+        </div>
+        <p class="source-note">Council as published by the Society: <a class="ext-link" href="https://www.signalandcybercorpsmuseum.org/en/advisory-council" target="_blank" rel="noopener">signalandcybercorpsmuseum.org ↗</a></p>
       </div>
     </div>
     <div class="subpanel" id="sub-distinguished">
       <div class="placard">
         <div class="tag">Exhibit opening soon</div>
         <h4>Distinguished Members</h4>
-        <p>This room is framed and ready for distinguished member photos and citations.</p>
+        <p>The Society recognises members whose service or support shaped Signal and Cyber history. This case is built and waiting on the roster and citations — send names and we will hang them here.</p>
       </div>
     </div>
     <div class="subpanel" id="sub-halloffame">
