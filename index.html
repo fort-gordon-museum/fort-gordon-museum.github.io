@@ -1750,12 +1750,12 @@ a.cover:hover, a.cover:focus-visible{border-color:var(--gold);}
             </div>
           </div>
           <div class="person officer">
-            <div class="nm">Laroy Peyton</div>
+            <div class="nm"><button type="button" class="bio-link" data-bio="peyton"><span class="n">Laroy Peyton</span><span class="more">Read biography &#10530;</span></button></div>
             <div class="rl">Vice Chairman of the Board</div>
             <div class="af">Customer Success, Cisco Systems, Inc.</div>
           </div>
           <div class="person officer">
-            <div class="nm">Shalisha Haynes</div>
+            <div class="nm"><button type="button" class="bio-link" data-bio="haynes"><span class="n">Shalisha Haynes</span><span class="more">Read biography &#10530;</span></button></div>
             <div class="rl">Treasurer</div>
             <div class="af">Accountant, SME CPAs</div>
           </div>
@@ -1765,17 +1765,17 @@ a.cover:hover, a.cover:focus-visible{border-color:var(--gold);}
             <div class="af">Signal &amp; Cyber Corps Museum Society</div>
           </div>
           <div class="person">
-            <div class="nm">Tom Washer</div>
+            <div class="nm"><button type="button" class="bio-link" data-bio="washer"><span class="n">Tom Washer</span><span class="more">Read biography &#10530;</span></button></div>
             <div class="rl">Director</div>
             <div class="af">Customer Success Executive, Cisco (DoD Sector)</div>
           </div>
           <div class="person">
-            <div class="nm">Eric Toler</div>
+            <div class="nm"><button type="button" class="bio-link" data-bio="toler"><span class="n">Eric Toler</span><span class="more">Read biography &#10530;</span></button></div>
             <div class="rl">Director</div>
             <div class="af">Executive Director, Georgia Cyber Center</div>
           </div>
           <div class="person">
-            <div class="nm">Pete Wilson</div>
+            <div class="nm"><button type="button" class="bio-link" data-bio="wilson"><span class="n">Pete Wilson</span><span class="more">Read biography &#10530;</span></button></div>
             <div class="rl">Director</div>
             <div class="af">Customer Success Executive, Cisco Systems, Inc.</div>
           </div>
@@ -1800,7 +1800,7 @@ a.cover:hover, a.cover:focus-visible{border-color:var(--gold);}
             <div class="af">Vice President, Strategic Initiatives, By Light Professional IT Services</div>
           </div>
           <div class="person">
-            <div class="nm">John McConnell</div>
+            <div class="nm"><button type="button" class="bio-link" data-bio="mcconnell"><span class="n">John McConnell</span><span class="more">Read biography &#10530;</span></button></div>
             <div class="rl">Director</div>
             <div class="af">Founder, Military Retirement Podcast</div>
           </div>
@@ -1815,28 +1815,28 @@ a.cover:hover, a.cover:focus-visible{border-color:var(--gold);}
         <p class="roster-note">Advisors bring the Signal Corps, the cyber industry, and the Augusta community to the table — including a former Chief of Signal who commanded the Signal Center on this post.</p>
         <div class="people-grid">
           <div class="person officer">
-            <div class="nm">Jeffery Foley</div>
+            <div class="nm"><button type="button" class="bio-link" data-bio="foley"><span class="n">Jeffery Foley</span><span class="more">Read biography &#10530;</span></button></div>
             <div class="rl">Lead Advisor</div>
             <div class="af">CEO, Loral Mountain</div>
             <div class="svc">BG (Ret.). The Army's <strong>34th Chief of Signal</strong> and Commanding General of the U.S. Army Signal Center and Fort Gordon, retiring in 2010 after 32 years.</div>
           </div>
           <div class="person">
-            <div class="nm">Ann Johnson</div>
+            <div class="nm"><button type="button" class="bio-link" data-bio="johnson"><span class="n">Ann Johnson</span><span class="more">Read biography &#10530;</span></button></div>
             <div class="rl">Advisory Council</div>
             <div class="af">Corporate Vice President and Deputy CISO, Microsoft</div>
           </div>
           <div class="person">
-            <div class="nm">Dr. Tom Clark</div>
+            <div class="nm"><button type="button" class="bio-link" data-bio="clark"><span class="n">Dr. Tom Clark</span><span class="more">Read biography &#10530;</span></button></div>
             <div class="rl">Board Advisor</div>
             <div class="af">Executive Director, Alliance for Fort Eisenhower</div>
           </div>
           <div class="person">
-            <div class="nm">Eric Y. Nishizawa</div>
+            <div class="nm"><button type="button" class="bio-link" data-bio="nishizawa"><span class="n">Eric Y. Nishizawa</span><span class="more">Read biography &#10530;</span></button></div>
             <div class="rl">Board Advisor</div>
             <div class="af">Owner, Law Offices of Eric Nishizawa</div>
           </div>
           <div class="person">
-            <div class="nm">Stuart M. Dyer</div>
+            <div class="nm"><button type="button" class="bio-link" data-bio="dyer"><span class="n">Stuart M. Dyer</span><span class="more">Read biography &#10530;</span></button></div>
             <div class="rl">Board Advisor</div>
             <div class="af">CEO/President, Cahaba Defense Consulting LLC</div>
           </div>
@@ -3405,6 +3405,168 @@ a.cover:hover, a.cover:focus-visible{border-color:var(--gold);}
   // Bios are the member's own words, reproduced from the Society's site.
   // Add an entry here and put data-bio="<key>" on the name to make it open.
   var BIOS = {
+    'mcconnell': {
+      name: 'John McConnell',
+      role: 'Board of Directors',
+      org: 'Military Retirement Podcast - Founder',
+      portrait: 'assets/bio_mcconnell.png',
+      own: 'In his own words',
+      paras: [
+        'Information Technology and Cyber Security professional with over 30 combined years of experience. Forward thinker and futurist. Empathetic leader focused on resilience, mental health, inclusivity, and breaking down barriers to success. Podcast host and producer.'
+      ],
+      src: '<a href="https://www.signalandcybercorpsmuseum.org/en/bod-single-page-layout/9john-mcconnell" target="_blank" rel="noopener">Profile at signalandcybercorpsmuseum.org \u2197</a>'
+    },
+    'haynes': {
+      name: 'Shalisha Haynes',
+      role: 'Treasurer',
+      org: 'Accountant, SME CPAs',
+      portrait: 'assets/bio_haynes.jpg',
+      own: 'In her own words',
+      paras: [
+        'Growing up nothing made me happier than helping someone out in need. As an Army Combat Veteran, I enjoyed helping Soldiers advance in their careers. This passion has since carried into my accounting career. I enjoy meeting and helping clients with their financial needs and goals. I am always honored and grateful to be a part of their success. In my role as a Staff Accountant, I focus on helping individuals and small businesses with their financial plans. I prepare individual and business tax returns, financial statements and reports for businesses, and analyze financial information to enable informed decision-making at every level. I take great pride in being a determined, diligent, and caring professional.'
+      ],
+      src: '<a href="https://www.signalandcybercorpsmuseum.org/en/bod-single-page-layout/4shalisha-haynes" target="_blank" rel="noopener">Profile at signalandcybercorpsmuseum.org \u2197</a>'
+    },
+    'washer': {
+      name: 'Tom Washer',
+      role: 'Board of Directors',
+      org: 'Customer Success Executive at Cisco (DoD Sector)',
+      portrait: 'assets/bio_washer.jpg',
+      own: 'In his own words',
+      paras: [
+        '\u2022 Highly experienced and respected organizational leader (managing large and diverse workforces) and program manager (in both the public and private sectors) with strong planning, team building, and communication skills. \u2022 Particularly strong in anticipating customer requirements, developing business capture management strategies, ensuring project/program performance, and implementing innovative solutions across a diverse range of functional areas. \u2022 Enterprise-minded director/manager of large multi-sector workforces supporting diverse business requirements with efficient and cost-effective solutions. \u2022 Versatile leader of large organizations during a 36-year Army/Corporate career with a proven record of accomplishment as a strategic thinker, innovator, resource manager, and problem solver. \u2022 Extensive experience working in International environments and with International business partners.'
+      ],
+      src: '<a href="https://www.signalandcybercorpsmuseum.org/en/bod-single-page-layout/6atom-washer" target="_blank" rel="noopener">Profile at signalandcybercorpsmuseum.org \u2197</a>'
+    },
+    'peyton': {
+      name: 'Laroy Peyton',
+      role: 'Vice Chairman of the Board of Directors',
+      org: 'Customer Success at Cisco Systems, Inc.',
+      portrait: 'assets/bio_peyton.jpg',
+      own: 'In his own words',
+      paras: [
+        'Information Technology Professional with exceptional leadership and problem-solving skills spanning 20 years of experience including six years serving as the primary communicator for the President of the United States. Results-driven strategic communicator with expertise in national security, emergency management, and cybersecurity of critical infrastructure. Proven track record of leading large, complex, and global organizations in no-fail missions of worldwide significance. Extensive experience with bringing together stakeholders from disparate organizations during times of crisis to collaborate on a common mission.'
+      ],
+      src: '<a href="https://www.signalandcybercorpsmuseum.org/en/bod-single-page-layout/5laroy-peyton" target="_blank" rel="noopener">Profile at signalandcybercorpsmuseum.org \u2197</a>'
+    },
+    'toler': {
+      name: 'Eric Toler',
+      role: 'Board of Directors',
+      org: 'Executive Director, Georgia Cyber Center',
+      portrait: 'assets/bio_toler.png',
+      own: 'In his own words',
+      paras: [
+        'The Georgia Cyber Innovation & Training Center is a unique public/private collaboration among academia, government, and the private sector. It is designed to meet the growing need for cybersecurity talent by addressing the cybersecurity workforce shortage with creative training solutions while shaping a culture of innovation.',
+        'The Hull McKnight building is home to certificate, undergraduate, graduate, and doctoral level programs in information technology, cybersecurity and cyber sciences offered by Augusta University and Augusta Technical College. Training to meet the current and future workforce needs for private industry as well as federal, state, and local government is a key focus in the Georgia Cyber Center\u2019s first building.',
+        'The Shaffer MacCartney building fosters innovation and entrepreneurship while serving as a hub for technology startups. It also includes leasable space available to firms and organizations supporting the state\u2019s cybersecurity ecosystem. Resident partners can leverage the center\u2019s strategic resources while benefiting from the world-class collaboration between industry leaders, startup companies, academic institutions and federal/state government entities.'
+      ],
+      src: '<a href="https://www.signalandcybercorpsmuseum.org/en/bod-single-page-layout/6eric-toler" target="_blank" rel="noopener">Profile at signalandcybercorpsmuseum.org \u2197</a>'
+    },
+    'wilson': {
+      name: 'Pete Wilson',
+      role: 'Board of Directors',
+      org: 'Customer Success Executive, Cisco Systems, INC.',
+      portrait: 'assets/bio_wilson.png',
+      own: 'In his own words',
+      paras: [
+        'Retired Army officer and combat veteran with over two decades of experience in cyber security, information management systems, computer networking, project management, and organizational leadership. Also experienced in marketing, sales and recruiting.',
+        'Specialties: executive leader experience, servant leadership, line of site and beyond line of site communications, cyber security, information management systems, marketing, college recruiting.'
+      ],
+      src: '<a href="https://www.signalandcybercorpsmuseum.org/en/bod-single-page-layout/7pete-wilson" target="_blank" rel="noopener">Profile at signalandcybercorpsmuseum.org \u2197</a>'
+    },
+    'johnson': {
+      name: 'Ann Johnson',
+      role: 'Advisory Council',
+      org: 'Corporate Vice President and Deputy CISO, Microsoft.',
+      portrait: 'assets/bio_johnson.png',
+      own: 'In her own words',
+      paras: [
+        'Ann Johnson is Corporate Vice President and Deputy CISO at Microsoft. In this role, Ann focuses on all external engagement for the Microsoft Office of the CISO, as well as risk for the Sales and Partner organization. She is a long-tenured, recognized thought leader on cybersecurity and a sought-after global speaker and digital author specializing in cyber resilience, online fraud, cyberattacks, compliance, and security.',
+        'Ann challenges traditional schools of thought and cyber-norms\u2013from the way the tech industry tackles cyber threats to the language it uses to communicate\u2013and encourages the industry to get outside its comfort zones and expand how it addresses the evolving threat landscape with the power of technology and people. As a global cybersecurity leader and strategist, she is looking ahead at how today\u2019s cybersecurity investments will impact tomorrow\u2019s cybersecurity reality.',
+        'Ann currently serves on the Board of Directors of Seattle Humane, N-Able, Human Security, Datavant, and is Member of the Board of Advisors for Cybersecurity Center of Excellence, WA and the Signal & Cyber Museum Society. Ann is also the Executive Sponsor of the Microsoft Women in Security Group.'
+      ],
+      src: '<a href="https://www.signalandcybercorpsmuseum.org/en/bod-single-page-layout/annjohnson" target="_blank" rel="noopener">Profile at signalandcybercorpsmuseum.org \u2197</a>'
+    },
+    'dyer': {
+      name: 'Stuart M. Dyer',
+      role: 'Board Advisor',
+      org: 'CEO/President, Cahaba Defense Consulting LLC',
+      portrait: 'assets/bio_dyer.jpg',
+      own: 'In his own words',
+      paras: [
+        'Stuart M. Dyer is a retired defense industry executive as well as a retired Major',
+        'General from the United States Army.',
+        'Stuart served as the CEO/President of Cahaba Defense Consulting, LLC, whose',
+        'primary focus was on supporting clients in capturing and winning business with',
+        'the Department of Defense. Prior to starting his own consulting practice, Stuart spent over',
+        'fourteen years in various leadership roles at small and large defense contractors including',
+        'Lockheed Martin and Leidos. He also spent two decades in various marketing and sales roles',
+        'within the Automatic Identification/Wireless data communications industry.',
+        'In 2014, Stuart retired at the rank of Major General, having served a total of 36 years in the',
+        'Army and the Army Reserve. Stuart culminated his Army career as the Director of Cyber',
+        'Security for the Army CIO/G6. In this capacity, he also served as the Army\u2019s Chief Information',
+        'Security Officer (CISO). In this position, he was responsible for Army-wide cyber',
+        'security/information assurance policies and programs. He is also a retired Certified Information',
+        'Security Manager (CISM).',
+        'Major General (Retired) Stuart Dyer served in both Operation Iraqi Freedom as well as',
+        'Operation Noble Eagle. In addition, he has commanded military organizations at all levels, from',
+        'the Company Command level through the two-star Army Signal Command level. As the',
+        'Commanding General for the 335th Signal Command, MG (Retired) Dyer and his command',
+        'provided highly reliable and secure strategic communications for the Army in the countries of',
+        'Iraq, Afghanistan, and Kuwait, as well as other countries in Southwest Asia.',
+        'Stuart is a 1978 graduate of the US Military Academy and a 2001 US Army War College',
+        'graduate. He also earned his Master of Science in Management from Georgia Tech in 1985.',
+        'His military awards include the Distinguished Service Medal, the Legion of Merit, the Bronze',
+        'Star as well as other numerous awards and decorations. He also earned the Parachutist Badge',
+        'and the Army Staff Identification Badge.',
+        'A devoted runner, hiker, and college football fan, Stuart resides with his wife in Pelham,',
+        'Alabama.'
+      ],
+      src: '<a href="https://www.signalandcybercorpsmuseum.org/en/bod-single-page-layout/stuart-m-dyer" target="_blank" rel="noopener">Profile at signalandcybercorpsmuseum.org \u2197</a>'
+    },
+    'nishizawa': {
+      name: 'Eric Y. Nishizawa',
+      role: 'Board Advisor',
+      org: 'Owner, Law Offices of Eric Nishizawa',
+      portrait: 'assets/bio_nishizawa.png',
+      own: 'In his own words',
+      paras: [
+        'Eric Yoshiaki Nishizawa is an attorney at Law Ofc Eric Nishizawa in Marina Del Rey, California. Eric Yoshiaki Nishizawa has 28 years of experience as a lawyer since graduating from University of California at Los Angeles School of Law with a N/A in 1998. This attorney also has a N/A from Loyola Law School, Loyola Marymount University.'
+      ],
+      src: '<a href="https://www.signalandcybercorpsmuseum.org/en/bod-single-page-layout/eric-y-nishizawa" target="_blank" rel="noopener">Profile at signalandcybercorpsmuseum.org \u2197</a>'
+    },
+    'clark': {
+      name: 'Dr. Tom Clark',
+      role: 'Board Advisor',
+      org: 'Executive Director, Alliance for Fort Eisenhower',
+      portrait: 'assets/bio_clark.png',
+      own: 'In his own words',
+      paras: [
+        'Named One of Georgia\'s Most Influential Leaders by Georgia Trend Magazine in their 2022 & 2023 TOP 500 edition. ',
+        'Named One of the 100 Most Influential/Notable Georgians by Georgia Trend (2019, 2020, 2021, 2022, and 2023) and James Magazines (2019, 2020, 2021, and 2022). Currently serves on the Georgia Joint Defense Commission representing Fort Gordon/Cyber Center of Excellence. ',
+        'Accomplished and experienced U.S. Military and Civilian Education Training Manager and U.S. Army Veteran with a commendable track record of providing leadership and direction for Fort Gordon\u2019s IT/Signal Training School Programs, General Dynamics Mission System Programs, and leadership programs in the non-profit/business community. ',
+        'Devised/delivered long-term planning to drive military and civilian organizational efficiencies and training mission goals. Demonstrated knowledge of agency level program directives, extensive leadership including personnel recruitment, training, scheduling, recognition, development, performance evaluations, and promotion. ',
+        'Project Management Professional (PMP) certification, Master\u2019s Degree in Postsecondary Adult Education, Doctorate Degree in Management in Organizational Leadership, with a Top Secret SCI Clearance.',
+        'Highly successful military career with multiple combat leadership assignments and a CAPSTONE assignment as the United States Army Signal Center and Fort Gordon Command Sergeant Major / Signal Corps Regimental Sergeant Major; ',
+        'Specialties: PMP, Leadership, Adult Education, Military, Fund Raising, Public Speaking'
+      ],
+      src: '<a href="https://www.signalandcybercorpsmuseum.org/en/bod-single-page-layout/dr-tom-clark" target="_blank" rel="noopener">Profile at signalandcybercorpsmuseum.org \u2197</a>'
+    },
+    'foley': {
+      name: 'Jeffery Foley',
+      role: 'Lead Advisor',
+      org: 'CEO, Loral Mountain',
+      portrait: 'assets/bio_foley.png',
+      note: 'BG (Ret.). The Army’s <strong>34th Chief of Signal</strong> and Commanding General of the U.S. Army Signal Center and Fort Gordon — the post this museum keeps the history of.',
+      own: 'In his own words',
+      paras: [
+        'As a certified leadership coach, Jeff works with business leaders who want to achieve greater results by creating positive and lasting change in behavior for themselves and the people they lead. In his latest book "BRAVE Business Leadership" he shares his proven methodology for growing competent, confident leaders that produce winning cultures leading to greater results. ',
+        'Jeff earned the rank of Brigadier General having served 32 years in the United States Army. Throughout his military career he served in leadership positions around the world, in constantly changing environments, all the time focused on the accomplishment of the mission and caring for people.',
+        'He is also the co-author of the the Penguin published book: "Rules and Tools for Leaders." As President of Loral Mountain Solutions, LLC, Jeff enjoys a wide range of clients including small and large businesses, health care professionals, non-profits, and the NCAA. He is also a partner with the Ken Blanchard Companies, Jim Horan\'s: One-Page Business Plan, and Wiley Corporation (Five Behaviors of an Effective Team & The Leadership Challenge). ',
+        'He played intercollegiate sports at West Point, is an Eagle Scout, and both a Distinguished Alum and a member of his high school\u2019s Sports Hall of Fame. He lives in Augusta, Georgia, enjoys the game of golf, and is an active member of his community, currently serving on 4 local and national boards.'
+      ],
+      src: '<a href="https://www.signalandcybercorpsmuseum.org/en/bod-single-page-layout/1jeffery-foley" target="_blank" rel="noopener">Profile at signalandcybercorpsmuseum.org \u2197</a>'
+    },
     'chase': {
       name: 'Welton Chase, Jr.',
       role: 'Chairman of the Board',
