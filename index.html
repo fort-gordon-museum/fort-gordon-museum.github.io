@@ -537,6 +537,83 @@ a.cover:hover, a.cover:focus-visible{border-color:var(--gold);}
 .prose a, .lede a, .placard a, .ext-link{color:var(--gold-bright);}
 .source-note{font-size:12px; color:var(--muted); margin-top:12px;}
 
+/* ---------- Auditorium billboard ---------- */
+.billboard{
+  position:relative; margin:0 -8px 30px; padding:30px 26px 26px;
+  background:radial-gradient(ellipse at top, #1d3a2a 0%, #0a1811 70%);
+  border:2px solid var(--gold);
+  box-shadow:0 0 0 6px #0a1811, 0 0 0 7px var(--hair), 0 24px 60px rgba(0,0,0,0.55), inset 0 0 60px rgba(0,0,0,0.6);
+}
+/* marquee bulbs along the top and bottom edges */
+.billboard::before, .billboard::after{
+  content:""; position:absolute; left:10px; right:10px; height:8px;
+  background:radial-gradient(circle, var(--gold-bright) 0 2.5px, rgba(224,188,74,0.25) 3.5px, transparent 4.5px) 0 0/22px 8px repeat-x;
+  animation:bb-twinkle 1.6s steps(2) infinite;
+}
+.billboard::before{top:-5px;}
+.billboard::after{bottom:-5px; animation-delay:.8s;}
+@keyframes bb-twinkle{50%{opacity:.45;}}
+@media (prefers-reduced-motion:reduce){.billboard::before, .billboard::after{animation:none;}}
+.bb-head{text-align:center; margin-bottom:22px;}
+.bb-kicker{font-family:var(--mono); font-size:11px; letter-spacing:4px; text-transform:uppercase; color:var(--muted);}
+.bb-title{
+  font-family:var(--serif); font-size:clamp(28px, 6vw, 44px); font-weight:700; letter-spacing:6px;
+  text-transform:uppercase; color:var(--gold-bright); line-height:1.1; margin-top:4px;
+  text-shadow:0 0 18px rgba(224,188,74,0.45);
+}
+.billboard .subnav{justify-content:center; gap:6px; margin-bottom:26px; padding-bottom:22px; border-bottom:1px dashed var(--hair);}
+.billboard .subnav button{
+  font-family:var(--mono); font-size:11.5px; letter-spacing:1.5px; text-transform:uppercase;
+  background:#0a1811; padding:9px 14px; display:flex; align-items:center; gap:8px;
+}
+.billboard .subnav button:hover{color:var(--white); border-color:var(--gold);}
+.billboard .subnav button.active{color:var(--ink); background:var(--gold); box-shadow:0 0 14px rgba(224,188,74,0.4);}
+.bb-count{
+  font-size:10px; min-width:18px; padding:1px 5px; border-radius:9px; text-align:center;
+  background:rgba(201,162,39,0.18); color:var(--gold-bright);
+}
+.subnav button.active .bb-count{background:rgba(13,31,22,0.25); color:var(--ink);}
+.billboard .section{margin-bottom:10px;}
+.billboard .section + .section{margin-top:28px;}
+.billboard .section h3, .billboard .section .lede{text-align:center; margin-left:auto; margin-right:auto;}
+.billboard .video-grid, .billboard .video-grid.single{
+  grid-template-columns:repeat(auto-fill, minmax(230px, 1fr)); gap:16px; max-width:none; margin:18px 0 6px;
+}
+.billboard .video-grid.single{grid-template-columns:repeat(auto-fit, minmax(230px, 320px)); justify-content:center;}
+.billboard .video-grid.shorts{grid-template-columns:repeat(auto-fill, minmax(130px, 1fr));}
+@media (max-width:640px){
+  .billboard{margin:0 -12px 24px; padding:24px 12px 18px;}
+  .billboard .video-grid, .billboard .video-grid.single{grid-template-columns:1fr 1fr; gap:10px;}
+}
+/* each video is a poster card: picture on top, title underneath */
+.yt-facade.bb-card{
+  aspect-ratio:auto; background:var(--panel); display:flex; flex-direction:column;
+  transition:transform .15s, border-color .15s, box-shadow .15s;
+}
+.yt-facade.bb-card::before{display:none;}
+.bb-card:hover, .bb-card:focus-visible{
+  transform:translateY(-3px); border-color:var(--gold);
+  box-shadow:0 10px 26px rgba(0,0,0,0.5), 0 0 16px rgba(224,188,74,0.25); outline:none;
+}
+.bb-thumb{position:relative; aspect-ratio:16/9; background:#000 center/cover no-repeat;}
+.video-grid.shorts .yt-facade.bb-card{aspect-ratio:auto;}
+.shorts .bb-thumb{aspect-ratio:9/16;}
+.bb-thumb::before{content:""; position:absolute; inset:0; background:linear-gradient(transparent 55%, rgba(0,0,0,0.55));}
+.bb-card .play-btn{width:46px; height:46px; font-size:15px;}
+.bb-num{
+  position:absolute; left:8px; top:8px; z-index:2;
+  font-family:var(--mono); font-size:10px; letter-spacing:1px; color:var(--ink);
+  background:var(--gold); padding:2px 6px;
+}
+.yt-facade.bb-card .vt{
+  position:static; padding:10px 12px 12px; flex:1;
+  font-family:var(--sans); font-size:13px; line-height:1.35; color:var(--paper-2);
+}
+.shorts .bb-card .vt{font-size:12px; padding:8px 10px 10px;}
+.bb-card.playing{border-color:var(--gold);}
+.bb-card.playing .bb-num{background:var(--crimson); color:var(--white);}
+.bb-card.playing .bb-num::after{content:" \00B7  NOW PLAYING";}
+
 /* ---------- Museum map ---------- */
 .map-search-wrap{position:relative; max-width:480px; margin:0 auto 30px;}
 .map-search{
@@ -767,6 +844,11 @@ a.cover:hover, a.cover:focus-visible{border-color:var(--gold);}
       <p class="room-dek">Every video in the museum's collection, in one room. Pick an exhibit, then pick a video.</p>
     </div>
 
+    <div class="billboard">
+    <div class="bb-head">
+      <div class="bb-kicker">In the Auditorium</div>
+      <div class="bb-title">Now Showing</div>
+    </div>
     <div class="subnav" id="auditorium-subnav">
       <button class="active" data-sub="welcome">Welcome</button>
       <button data-sub="signal">Signal Story</button>
@@ -814,6 +896,7 @@ a.cover:hover, a.cover:focus-visible{border-color:var(--gold);}
         <p class="lede">Fireside chats, panels, and Save Our Story interviews from the museum's oral history collection.</p>
         <div class="video-grid" data-video-group="fireside"></div>
       </div>
+    </div>
     </div>
 
     <div class="room-foot">
@@ -1984,21 +2067,21 @@ a.cover:hover, a.cover:focus-visible{border-color:var(--gold);}
     <div class="room-head">
       <div class="room-kicker">Wing Eleven</div>
       <h1 class="room-title">News &amp; Announcements</h1>
-      <p class="room-dek">Heritage, the Society's magazine, chronicles Signal Corps history issue by issue. Select a cover to read it on Issuu, or read the issues page by page in the <button type="button" data-goto="magazine" style="background:none; border:none; padding:0; color:var(--gold-bright); font:inherit; text-decoration:underline; cursor:pointer;">Heritage Magazine</button> room.</p>
+      <p class="room-dek">Heritage, the Society's magazine, chronicles Signal Corps history issue by issue. Select a cover to read the issue here or download it as a PDF, or browse every issue in the <a href="heritage/" style="color:var(--gold-bright);">Heritage reading room</a>. Highlights are also on view in the <button type="button" data-goto="magazine" style="background:none; border:none; padding:0; color:var(--gold-bright); font:inherit; text-decoration:underline; cursor:pointer;">Heritage Magazine</button> room.</p>
     </div>
     <div class="section">
       <div class="cover-row">
-        <a class="cover" href="https://issuu.com/fghms/docs/fghms_2020_1st_edition_final" target="_blank" rel="noopener">
+        <a class="cover" href="heritage/issue-1.html">
           <img loading="lazy" decoding="async" src="assets/heritage_2020_1.jpg" data-img="heritage_2020_1" alt="Heritage magazine, 2020 first edition cover">
-          <div class="cap"><strong>2020 · 1st Edition</strong>Read on Issuu ↗</div>
+          <div class="cap"><strong>2020 · 1st Edition</strong>Read online · PDF</div>
         </a>
-        <a class="cover" href="https://issuu.com/fghms/docs/fghms_2021_2nd_edition" target="_blank" rel="noopener">
+        <a class="cover" href="heritage/issue-2.html">
           <img loading="lazy" decoding="async" src="assets/heritage_2021_2.jpg" data-img="heritage_2021_2" alt="Heritage magazine, 2021 second edition cover">
-          <div class="cap"><strong>2021 · 2nd Edition</strong>Read on Issuu ↗</div>
+          <div class="cap"><strong>2021 · 2nd Edition</strong>Read online · PDF</div>
         </a>
-        <a class="cover" href="https://issuu.com/fghms/docs/fghms_2021_3rd_edition_sof" target="_blank" rel="noopener">
+        <a class="cover" href="heritage/issue-3.html">
           <img loading="lazy" decoding="async" src="assets/heritage_2021_3.jpg" data-img="heritage_2021_3" alt="Heritage magazine, 2021 third edition cover">
-          <div class="cap"><strong>2021 · 3rd Edition</strong>Read on Issuu ↗</div>
+          <div class="cap"><strong>2021 · 3rd Edition</strong>Read online · PDF</div>
         </a>
         <div class="cover" style="cursor:default;">
           <img loading="lazy" decoding="async" src="assets/heritage_space.jpg" data-img="heritage_space" alt="Heritage magazine cover: Shaping Space Operations">
@@ -2023,7 +2106,7 @@ a.cover:hover, a.cover:focus-visible{border-color:var(--gold);}
     <div class="room-head">
       <div class="room-kicker">Wing Twelve</div>
       <h1 class="room-title">Heritage Magazine</h1>
-      <p class="room-dek">The Society's quarterly magazine, page by page. Click any page to read it full size.</p>
+      <p class="room-dek">The Society's quarterly magazine, page by page. Click any page to read it full size, or read every issue in full, as text or as PDF, in the <a href="heritage/" style="color:var(--gold-bright);">Heritage reading room</a>.</p>
     </div>
 
     <div class="section">
@@ -3244,18 +3327,40 @@ a.cover:hover, a.cover:focus-visible{border-color:var(--gold);}
     if (placeholder) placeholder.style.display = list.length ? 'none' : '';
     var hideIfEmpty = grid.closest('[data-hide-if-empty]');
     if (!list.length && hideIfEmpty){ hideIfEmpty.style.display = 'none'; return; }
-    list.forEach(function(v){
+    var onBillboard = !!grid.closest('.billboard');
+    list.forEach(function(v, i){
       var d = document.createElement('div');
       d.className = 'yt-facade';
       d.setAttribute('role', 'button');
       d.setAttribute('tabindex', '0');
       d.setAttribute('aria-label', 'Play: ' + v.t);
       d.setAttribute('data-yid', v.id);
-      d.style.backgroundImage = "url('https://img.youtube.com/vi/"+v.id+"/hqdefault.jpg')";
-      d.innerHTML = '<div class="play-btn">\u25B6</div><div class="vt"></div>';
+      var thumb = "url('https://img.youtube.com/vi/"+v.id+"/hqdefault.jpg')";
+      if (onBillboard){
+        // Auditorium: a poster card with the title under the picture.
+        d.classList.add('bb-card');
+        d.innerHTML = '<div class="bb-thumb"><span class="bb-num"></span><div class="play-btn">\u25B6</div></div><div class="vt"></div>';
+        d.querySelector('.bb-thumb').style.backgroundImage = thumb;
+        d.querySelector('.bb-num').textContent = 'No. ' + (i < 9 ? '0' : '') + (i + 1);
+      } else {
+        d.style.backgroundImage = thumb;
+        d.innerHTML = '<div class="play-btn">\u25B6</div><div class="vt"></div>';
+      }
       d.querySelector('.vt').textContent = v.t;
       grid.appendChild(d);
     });
+  });
+
+  // Billboard tabs show how many videos each exhibit holds.
+  document.querySelectorAll('.billboard .subnav button[data-sub]').forEach(function(btn){
+    var panel = document.getElementById('sub-' + btn.getAttribute('data-sub'));
+    if (!panel) return;
+    var n = panel.querySelectorAll('.yt-facade').length;
+    var c = document.createElement('span');
+    c.className = 'bb-count';
+    c.textContent = n;
+    c.setAttribute('aria-hidden', 'true');
+    btn.appendChild(c);
   });
 
   function playFacade(facade){
