@@ -22,7 +22,8 @@ Eisenhower. This virtual museum keeps the collection open to the public meanwhil
 |---|---|
 | `index.html` | The museum itself — a single self-contained page. Images are embedded as base64, so there are no external asset requests. |
 | `lineage/` | Mirror of the official lineage, campaign participation credit, and unit citations for the 171 Signal Regiment units in the Command Gallery roster, plus a filterable index. |
-| `tools/` | Fetch and build scripts for the lineage mirror, with its own README. |
+| `heritage/` | The Heritage magazine reading room: every issue as readable text and page scans, plus a PDF download of each. |
+| `tools/` | Fetch and build scripts for the lineage mirror and the Heritage reading room (`tools/heritage/`), each with its own README. |
 
 ## A note on names
 

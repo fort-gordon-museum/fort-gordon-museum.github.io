@@ -1,0 +1,48 @@
+H	Membership Application
+H	Fort Gordon Historical Museum Society
+P	DONATE ONLINE AT SECUREOURSTORY.ORG
+P	NAME: ___________________________________________________________
+P	DATE:
+P	(PRINT: FIRST NAME, MIDDLE INITIAL, LAST NAME)
+P	MILITARY RANK OR TITLE (i.e. Dr.Judge, etc.):
+P	ACTIVE DUTY/VETERAN?Retired Military?
+P	ADDRESS:__CITY: _
+P	STATE:_ ZIPCODE(PLUS-4):_EMAIL: PHONE:___________________________________
+H	DONOR LEVELS
+P	CHECK ONE
+P	AMOUNTCATEGORY
+P	NAME ON WEBSITE
+P	RECOGNITION ON SOCIAL MEDIA
+P	NAME ON PLAQUE IN MUSEUM
+P	Up to $99DonorNONONO
+P	$100 - $249SupporterNONONO
+P	$250 - $499PatronNONONO
+P	$500 - $999BenefactorNONONO
+P	$1,000 - $1,999InnovatorNONONO
+P	$2,000 - $2,499Patriot NONONO
+P	CAMPAIGN CIRCLE DONORS
+P	$2,500 - $4,999
+P	Lexington
+P	YESNONO
+P	$5,000 - $7,499
+P	Ticonderoga
+P	YESYESNO
+P	$7,500 - $9,999
+P	Boston
+P	YESYESYES
+P	$10,000 - $14,999
+P	Quebec
+P	YESYESYES
+P	$15,000 - $24,000Charleston YESYESYES
+P	$25,000 - $49,999
+P	Long Island
+P	YESYESYES
+P	$50,000 - $99,999
+P	Trenton
+P	YESYESYES
+P	$100,000 and above Princeton
+P	YESYESYES
+P	AMOUNT ENCLOSED: $
+P	MAIL CHECKS TO: FORT GORDON HISTORICAL MUSEUM SOCIETY ATTN: DEVELOPMENT, 4570 DEWEY DRIVE, MARTINEZ, GA 30907-9103 (DO NOT SEND CASH).
+P	ONLINE: http://givebutter.com/KoU87x OR PAYPAL.ME/FGHMS - also on our website at secureourstory.org
+P	ACH transfer, gifts from a Donor Advised Fund or direct IRA distribution, or to inform us about a planned gift (will, trust, etc.): contact ExecDirector@FGHMS.COM

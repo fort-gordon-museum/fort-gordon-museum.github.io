@@ -1,0 +1,34 @@
+H	PLANNEDGIFT CONFIRMATION
+P	Please return to: Fort Gordon Historical Museum Society ATTN: Planned Giving 4570 Dewey Drive Martinez, Georgia 300907-9103 Taxpayer I.D. #84-3998550
+P	Donor name(s) (printed) Donor Address
+P	TYPE OF GIFT WillBequest
+P	TrustBequest
+P	Donor Email Donor Phone Number
+P	Other
+P	SpecificAmount SpecificPercentage
+P	%
+P	Residual bequest Contingent bequest
+P	SpecificAmount SpecificPercentage
+P	%
+P	Revocable
+P	Irrevocable CharitableRemainder
+P	Unitrust AnnuityTrust
+P	SpecificAmount SpecificPercentage
+P	%
+P	Life Insurance Beneficiary Gift Annuity Charitable Deferred IRA, pension, or other retirement account Charitable Legacy Fund (donor advised)
+P	Stocks/securities
+P	Other
+P	GoodFaithEstimateoftheGiftValue
+P	NameofLawyerorFinancialAdvisor(optional) AddressPhoneNumber
+P	Email
+P	DESIGNA TION OF GIFT My/ourgiftmaybeusedforthegreatestneeds.
+P	My/our gift is designated for the followingpurpose(s)
+P	LEGACY SOCIETY Becauseofyourcharitableintentions,youwillbeincludedasamemberoftheLong Island Memberwithagiftof$25,000or more. FGHMScreatedtheLegacySocietytorecognizedonorswhochooseaplannedgifttosupportthefoundation in upholdingitsmission.YournamewillbepublishedasaLegacySocietymemberinpublicationsso thatothersmaybeinspired tofollowyourexample.Ifyouwouldprefertoremainanonymous(andnotbelisted),pleasecheck thefollowing:
+P	No,I/WedonotwishtobelistedintheLegacySocietyinFort Gordon Historical Societypublications.Wepreferto remain anonymous.(ItisthefiduciaryresponsibilityoftheFGHMStoensureourdonor’sconfidentiality).
+P	Name(printed)
+P	Date ofBirth
+P	SignatureDate
+P	Name(printed)
+P	Date ofBirth
+P	SignatureDate
+P	This confirmation of deferred gift form is a record of yourintent,adonor-approvedreferenceforfutureuse. Thisisnotabindinglegaldocument.Thankyoufor your gift to support the Fort Gordon Historical Museum Society!

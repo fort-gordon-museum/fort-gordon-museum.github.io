@@ -1,0 +1,5 @@
+P	by John R. Thomas, Army Colonel (Retired)
+P	The US Special Operations Command was established in 1987 under Major Force Program 11 (MFP 11). The purpose was to consolidate all Special Operations Forces (SOF) under one command for funding, training, acquisition, TTP and Command and Control Direct Action when directed.
+P	Prior to this consolidation the communications systems of the three service SOF organizations and the Joint Special Operations Command (JSOC) were stovepiped and non-interoperable. They lacked the capacity to move critical data and imagery to SOF units when needed for planning, targeting and execution. Furthermore the acquisition and operations and maintenance were enormous. Of particular need was to provide quality imagery to JSOC. The legacy JSOC system relied on many point to point 56 KB circuits. Compounding the data movement deficiency was the lack of a common TS and TS(SCI) switched voice system to effect C2.
+H	SCAMPI
+P	Scalable Copy Accelerated by MPI (SCAMPI) is a command line utility to accelerate data transfer, and is currently installed on most HPCMP HPC systems.
