@@ -250,7 +250,7 @@ p{margin:0 0 14px; font-size:15.5px;}
 .subnav button.active{color:var(--ink); background:var(--gold); border-color:var(--gold); font-weight:600;}
 .subpanel{display:none;}
 /* ---- people roster (Honor Roll) ---- */
-.people-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:14px;}
+.people-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:14px; align-items:start;}
 .person{
   border:1px solid var(--hair); background:var(--panel); padding:16px 18px;
   border-left:3px solid var(--hair);
@@ -267,7 +267,15 @@ p{margin:0 0 14px; font-size:15.5px;}
   font-family:var(--sans); font-size:12.5px; color:var(--paper); line-height:1.55;
   margin-top:9px; padding-top:9px; border-top:1px solid rgba(255,255,255,0.07);
 }
-.person .svc a{color:var(--gold-bright);}
+.person .svc a{color:var(--paper-2); text-decoration:underline; text-decoration-color:rgba(201,162,39,0.5); text-underline-offset:2px;}
+.person .svc a:hover{color:var(--gold-bright);}
+.person .svc strong{color:var(--gold-bright); font-weight:600;}
+ul.cmds{list-style:none; margin:9px 0 0; padding:0;}
+ul.cmds li{
+  padding:5px 0 5px 12px; border-left:2px solid var(--hair);
+  margin-bottom:4px; font-size:12.5px; line-height:1.5;
+}
+ul.cmds li:last-child{margin-bottom:0; border-left-color:var(--gold);}
 .roster-note{font-size:13px; color:var(--muted); margin:0 0 22px; max-width:640px;}
 @media (max-width:640px){.people-grid{grid-template-columns:1fr;}}
 .subpanel.active{display:block;}
@@ -1666,7 +1674,16 @@ a.cover:hover, a.cover:focus-visible{border-color:var(--gold);}
             <div class="nm">Welton Chase, Jr.</div>
             <div class="rl">Chairman of the Board</div>
             <div class="af">Director, Customer Experience, Cisco</div>
-            <div class="svc">BG (Ret.). Commanded the <button type="button" data-goto="command-gallery" style="background:none; border:none; padding:0; color:var(--gold-bright); font:inherit; text-decoration:underline; cursor:pointer;">501st Signal Battalion in Iraq and the 1st Signal Brigade in Korea</button>, then 7th Signal Command (Theater).</div>
+            <div class="svc">
+              <strong>BG (Ret.)</strong> &#183; commands held, from company to theater signal command. Underlined units open their lineage and honors in the museum's archive.
+              <ul class="cmds">
+                <li>Delta Company, <a href="lineage/0327scbn.htm" target="_blank" rel="noopener">327th Signal Battalion (Airborne)</a>, <a href="lineage/0035scbde.htm" target="_blank" rel="noopener">35th Signal Brigade</a></li>
+                <li><a href="lineage/0501scbn.htm" target="_blank" rel="noopener">501st Signal Battalion</a>, 101st Airborne Division (Air Assault)</li>
+                <li>501st Special Troops Battalion, 101st Airborne Division (Air Assault)</li>
+                <li><a href="lineage/0001scbde.htm" target="_blank" rel="noopener">1st Signal Brigade</a>, supporting Eighth U.S. Army (Korea)</li>
+                <li><a href="lineage/0007sccmd.htm" target="_blank" rel="noopener">7th Signal Command (Theater)</a></li>
+              </ul>
+            </div>
           </div>
           <div class="person officer">
             <div class="nm">Laroy Peyton</div>
