@@ -471,6 +471,11 @@ ul.cmds li:last-child{margin-bottom:0; border-left-color:var(--gold);}
   color:var(--gold); padding-bottom:8px; border-bottom:1px solid var(--hair); margin-bottom:14px;
 }
 .biobox p{font-size:15px; line-height:1.7; margin:0 0 14px; color:var(--paper);}
+.biobox .bionote{
+  font-family:var(--sans); font-size:13px; line-height:1.6; color:var(--paper-2);
+  background:var(--panel-2); border-left:3px solid var(--gold);
+  padding:11px 14px; margin:18px 0 0;
+}
 .biobox .src{
   font-family:var(--sans); font-size:12px; color:var(--muted);
   border-top:1px solid var(--hair); padding-top:14px; margin:18px 0 0;
@@ -1730,9 +1735,9 @@ a.cover:hover, a.cover:focus-visible{border-color:var(--gold);}
         <p class="roster-note">The volunteers who govern the Society, carry the campaign for a new museum building, and answer for the collection while it is in storage.</p>
         <div class="people-grid">
           <div class="person officer">
-            <div class="nm">Welton Chase, Jr.</div>
+            <div class="nm"><button type="button" class="bio-link" data-bio="chase"><span class="n">Welton Chase, Jr.</span><span class="more">Read biography &#10530;</span></button></div>
             <div class="rl">Chairman of the Board</div>
-            <div class="af">Director, Customer Experience, Cisco</div>
+            <div class="af">Business Leader, Department of Defense &#8212; Cisco</div>
             <div class="svc">
               <strong>BG (Ret.)</strong> &#183; commands held, from company to theater signal command. Underlined units open their lineage and honors in the museum's archive.
               <ul class="cmds">
@@ -2164,6 +2169,7 @@ a.cover:hover, a.cover:focus-visible{border-color:var(--gold);}
     </div>
     <div class="own" id="biobox-own"></div>
     <div id="biobox-body"></div>
+    <p class="bionote" id="biobox-note"></p>
     <p class="src" id="biobox-src"></p>
   </div>
 </div>
@@ -3399,6 +3405,19 @@ a.cover:hover, a.cover:focus-visible{border-color:var(--gold);}
   // Bios are the member's own words, reproduced from the Society's site.
   // Add an entry here and put data-bio="<key>" on the name to make it open.
   var BIOS = {
+    'chase': {
+      name: 'Welton Chase, Jr.',
+      role: 'Chairman of the Board',
+      org: 'Business Leader, Department of Defense — Cisco',
+      portrait: 'assets/bio_chase.png',
+      own: 'In his own words',
+      paras: [
+        'As a Business Leader for Department of Defense - Cisco, I drive strategic post-sales market initiatives, enterprise growth, and trusted partnerships across defense and military command structures. Drawing on extensive executive leadership, a distinguished military background, and deep technical expertise in artificial intelligence and coding, I oversee the end-to-end implementation of comprehensive technologies—spanning collaboration, data centers, routers, security, artificial intelligence, network-as-code, and automated agents—to achieve national security and defense mission outcomes.',
+        'I lead high-performing operational and customer success organizations dedicated to accelerating capability adoption, ensuring resilient lifecycle delivery, and deploying intelligent, software-driven infrastructures across defense agencies. Holding advanced credentials including BCS 3.0 Delivery Enablement and Customer Success Executive Green Belt, I am committed to principled leadership, operational excellence, and driving measurable impact for our nation’s armed forces.'
+      ],
+      note: 'BG (Ret.), U.S. Army Signal Corps. His commands, from company to theater signal command, are listed on the Board of Directors card.',
+      src: '<a href="https://www.signalandcybercorpsmuseum.org/en/bod-single-page-layout/1welton-chase-jr" target="_blank" rel="noopener">Profile at signalandcybercorpsmuseum.org ↗</a> &#183; <a href="https://www.linkedin.com/in/wechase/" target="_blank" rel="noopener">LinkedIn ↗</a>'
+    },
     'tuschen': {
       name: 'Amy Tuschen',
       role: 'Executive Director',
@@ -3428,6 +3447,9 @@ a.cover:hover, a.cover:focus-visible{border-color:var(--gold);}
     document.getElementById('biobox-own').textContent = b.own || '';
     document.getElementById('biobox-body').innerHTML =
       (b.paras || []).map(function(p){ return '<p>' + p + '</p>'; }).join('');
+    var noteEl = document.getElementById('biobox-note');
+    noteEl.innerHTML = b.note || '';
+    noteEl.style.display = b.note ? '' : 'none';
     document.getElementById('biobox-src').innerHTML = b.src || '';
     biobox.classList.add('open');
     bioReturnFocus = trigger || null;
