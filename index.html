@@ -291,6 +291,31 @@ ul.cmds li:last-child{margin-bottom:0; border-left-color:var(--gold);}
 .tstop .yr{font-family:var(--mono); color:var(--gold-bright); font-size:14px; margin-bottom:6px;}
 .tstop .lbl{font-family:var(--serif); font-size:16px; font-weight:600; max-width:180px; margin:0 auto;}
 
+/* dated milestones under the logo strip */
+.chron{list-style:none; margin:10px 0 0; padding:0 0 0 22px; border-left:1px solid var(--hair); max-width:680px;}
+.chron li{position:relative; padding:0 0 22px 18px;}
+.chron li::before{
+  content:""; position:absolute; left:-28px; top:6px;
+  width:11px; height:11px; border-radius:50%; background:var(--gold); border:2px solid var(--ink);
+}
+.chron li.key::before{background:var(--crimson);}
+.chron .when{font-family:var(--mono); font-size:12px; letter-spacing:1px; color:var(--gold-bright); text-transform:uppercase;}
+.chron .what{font-family:var(--serif); font-size:17px; font-weight:600; margin:2px 0 4px;}
+.chron p{margin:0; font-size:14px; color:var(--muted);}
+.chron p a, .chron p button{color:var(--gold-bright);}
+.chron p button{background:none; border:0; padding:0; font:inherit; text-decoration:underline; cursor:pointer;}
+.chron .src{font-size:12px; color:var(--muted); font-style:italic;}
+
+/* press coverage list */
+.press{border-top:1px solid var(--hair);}
+.press a{display:grid; grid-template-columns:150px 1fr; gap:16px; padding:13px 4px; border-bottom:1px solid var(--hair); text-decoration:none;}
+.press a:hover{background:var(--panel);}
+.press .out{font-family:var(--mono); font-size:12px; color:var(--gold); line-height:1.5;}
+.press .out span{display:block; color:var(--muted);}
+.press .hl{font-family:var(--serif); font-size:16px; font-weight:600; line-height:1.35;}
+.press .hl small{display:block; font-family:var(--sans); font-weight:400; font-size:13px; color:var(--muted); margin-top:3px;}
+@media (max-width:640px){ .press a{grid-template-columns:1fr; gap:4px;} }
+
 /* ---------- Giving tiers ---------- */
 .tier-list{border-top:1px solid var(--hair);}
 .tier{
@@ -2046,7 +2071,7 @@ a.cover:hover, a.cover:focus-visible{border-color:var(--gold);}
     <div class="room-head">
       <div class="room-kicker">Wing Ten</div>
       <h1 class="room-title">Time Waits for No One</h1>
-      <p class="room-dek">The museum's own progress, three snapshots in.</p>
+      <p class="room-dek">The museum's own progress: three names, and the road between them.</p>
     </div>
     <div class="tline">
       <div class="tstop"><img loading="lazy" decoding="async" src="assets/logo_2019.png" data-img="logo_2019" alt="Fort Gordon Historical Museum Society seal, 2019"><div class="yr">2019</div><div class="lbl">Where we started</div><div class="org">Fort Gordon Historical Museum Society</div></div>
@@ -2054,6 +2079,89 @@ a.cover:hover, a.cover:focus-visible{border-color:var(--gold);}
       <div class="tstop"><img loading="lazy" decoding="async" src="assets/logo_2024.png" data-img="logo_2024" alt="Signal &amp; Cyber Corps Museum Society seal"><div class="yr">2024</div><div class="lbl">Where we are today</div><div class="org">Signal &amp; Cyber Corps Museum Society</div></div>
     </div>
     <p style="text-align:center; color:var(--muted); max-width:520px; margin:30px auto 0; font-size:13.5px;">This strip is ready for a fourth stop whenever the museum reaches its next milestone.</p>
+
+    <div class="section" style="margin-top:44px;">
+      <h3>The road so far</h3>
+      <p class="lede">From a Facebook group of Signal veterans to a society with a building in its sights. Press reports are linked in <button type="button" data-goto="news" style="background:none; border:none; padding:0; color:var(--gold-bright); font:inherit; text-decoration:underline; cursor:pointer;">News &amp; Announcements</button>.</p>
+      <ol class="chron">
+        <li>
+          <div class="when">8 June 2020</div>
+          <div class="what">The Society gathers online</div>
+          <p>Brigadier General Welton Chase, Jr. opens the Fort Gordon Historical Museum Society's member group with its mission: raise funds to acquire, build and run a museum near Fort Gordon, and keep the Signal Corps Museum Collection in Augusta. Its first request to members: "Please share your photos and history here."</p>
+        </li>
+        <li>
+          <div class="when">21 June 2020</div>
+          <div class="what">The Signal Corps turns 160</div>
+          <p>Members mark the Regiment's birthday, 160 years after Congress created the Signal Corps on 21 June 1860.</p>
+        </li>
+        <li>
+          <div class="when">August 2020</div>
+          <div class="what">A four-phase plan</div>
+          <p>The Society publishes its road map: (1) set up the framework for success, (2) raise initial funding and select a facility, (3) establish the museum and transfer the artifacts, (4) cut the ribbon and open.</p>
+        </li>
+        <li>
+          <div class="when">September 2020</div>
+          <div class="what">The first fact sheets</div>
+          <p>One-page histories of Signal Corps figures begin with Theodor "Dr. Seuss" Geisel and Frank Capra, both of whom served in the Signal Corps in the Second World War. Read more in <button type="button" data-goto="combat-camera">Combat Camera &amp; Video</button>.</p>
+        </li>
+        <li>
+          <div class="when">October 2020</div>
+          <div class="what"><i>Heritage</i> is born</div>
+          <p>The first issue of the Society's magazine leads with the Academy Awards won by Signal Corps filmmakers. <a href="heritage/issue-1.html">Read issue 1</a>.</p>
+        </li>
+        <li class="key">
+          <div class="when">25 February 2021</div>
+          <div class="what">The Signal Corps Museum closes</div>
+          <p>Base construction takes the museum's building, and its colors are cased at a ceremony on post. About 4,100 artifacts must leave the building.</p>
+        </li>
+        <li>
+          <div class="when">March 2021</div>
+          <div class="what"><i>Heritage</i> issue 2</div>
+          <p>The Military Police School at Camp Gordon. <a href="heritage/issue-2.html">Read issue 2</a>.</p>
+        </li>
+        <li>
+          <div class="when">April 2021</div>
+          <div class="what">A building in sight</div>
+          <p>The Society identifies a new home just outside Gate 1: the former National Science Center building at Gordon Highway and Craig Sims Parkway.</p>
+        </li>
+        <li>
+          <div class="when">May 2021</div>
+          <div class="what">Fireside Chats</div>
+          <p>LTG John B. Morrison Jr., the Army's Deputy Chief of Staff, G-6, joins the Society's Fireside Chat series. Watch it in the <button type="button" data-goto="auditorium" data-avsub="fireside">Auditorium</button>.</p>
+        </li>
+        <li>
+          <div class="when">May 2021</div>
+          <div class="what">The collection goes into storage</div>
+          <p>A Center of Military History team packs the collection with the museum's curator. Most of it moves to Anniston, Alabama, to be held until it has a new home.</p>
+        </li>
+        <li>
+          <div class="when">September 2021</div>
+          <div class="what"><i>Heritage</i> issue 3</div>
+          <p>Special operations communicators. <a href="heritage/issue-3.html">Read issue 3</a>.</p>
+        </li>
+        <li>
+          <div class="when">February 2022</div>
+          <div class="what">$125,000 raised</div>
+          <p>The Augusta Press reports the Society has raised $125,000 toward the roughly $4 million needed to buy, renovate and staff the building.</p>
+        </li>
+        <li>
+          <div class="when">October 2023</div>
+          <div class="what">About half a million raised</div>
+          <p>At a donation breakfast, the Society reports about $500,000 raised to buy a building for the artifacts held at Anniston Army Depot.</p>
+        </li>
+        <li class="key">
+          <div class="when">27 October 2023</div>
+          <div class="what">Fort Gordon becomes Fort Eisenhower</div>
+          <p>The post is redesignated for General of the Army Dwight D. Eisenhower. The museum's history keeps the name Fort Gordon wherever the record uses it.</p>
+        </li>
+        <li>
+          <div class="when">2024</div>
+          <div class="what">Signal &amp; Cyber Corps Museum Society</div>
+          <p>The Society takes its present name, covering the Cyber Corps as well as the Signal Regiment. <button type="button" data-goto="give">Help write the next stop.</button></p>
+        </li>
+      </ol>
+    </div>
+
     <div class="room-foot">
       <button data-goto="give">← Support the Museum</button>
       <button data-goto="news">Next: News &amp; Announcements →</button>
@@ -2087,6 +2195,19 @@ a.cover:hover, a.cover:focus-visible{border-color:var(--gold);}
           <img loading="lazy" decoding="async" src="assets/heritage_space.jpg" data-img="heritage_space" alt="Heritage magazine cover: Shaping Space Operations">
           <div class="cap"><strong>Shaping Space Operations</strong>Issue link coming soon</div>
         </div>
+      </div>
+    </div>
+    <div class="section">
+      <h3>In the news</h3>
+      <p class="lede">Press coverage of the museum's closing and the campaign to bring the collection home. The story in order is on the <button type="button" data-goto="timeline" style="background:none; border:none; padding:0; color:var(--gold-bright); font:inherit; text-decoration:underline; cursor:pointer;">Timeline</button>.</p>
+      <div class="press">
+        <a href="https://www.wjbf.com/news/signal-and-cyber-museum-society-hosts-donation-breakfast/" target="_blank" rel="noopener"><div class="out">WJBF<span>30 Oct 2023</span></div><div class="hl">Signal and Cyber Museum Society hosts donation breakfast ↗<small>About $500,000 raised toward a building for the artifacts held at Anniston Army Depot.</small></div></a>
+        <a href="https://www.wjbf.com/news/fort-gordons-signal-corps-museum-seeks-donations-for-a-potential-new-building/" target="_blank" rel="noopener"><div class="out">WJBF<span>9 Jun 2022</span></div><div class="hl">Fort Gordon's Signal Corps Museum seeks donations for a potential new building ↗<small>The fight to keep the Berlin Wall section and the Oscars in the CSRA.</small></div></a>
+        <a href="https://theaugustapress.com/signal-corps-history-in-danger-of-being-lost/" target="_blank" rel="noopener"><div class="out">The Augusta Press<span>7 Feb 2022</span></div><div class="hl">Signal Corps museum closed; group raising money to save Fort Gordon history ↗<small>$125,000 raised toward the former National Science Center building.</small></div></a>
+        <a href="https://www.wjbf.com/csra-news/without-donations-priceless-artifacts-may-be-lost-to-csra/" target="_blank" rel="noopener"><div class="out">WJBF<span>21 May 2021</span></div><div class="hl">Without donations, priceless artifacts may be lost to CSRA ↗<small>The collection is bound for Anniston, Alabama, unless a local home is found.</small></div></a>
+        <a href="https://www.army.mil/article/246668/museum_artifacts_safely_stored_to_be_rehoused" target="_blank" rel="noopener"><div class="out">Army.mil<span>20 May 2021</span></div><div class="hl">Museum artifacts safely stored, to be rehoused ↗<small>How the Center of Military History packed the collection.</small></div></a>
+        <a href="https://www.armytimes.com/news/your-army/2021/05/02/a-new-battle-campaign-museum-fights-to-stay-at-fort-gordon/" target="_blank" rel="noopener"><div class="out">Army Times<span>2 May 2021</span></div><div class="hl">A new battle campaign: Museum fights to stay at Fort Gordon ↗<small>Signal Corps retirees begin the campaign for a new building.</small></div></a>
+        <a href="https://www.wrdw.com/2021/04/21/public-support-needed-to-secure-a-new-home-for-the-fort-gordon-museum/" target="_blank" rel="noopener"><div class="out">WRDW News 12<span>21 Apr 2021</span></div><div class="hl">Public support needed to secure a new home for the Fort Gordon Museum ↗<small>The Society rallies support for a building just outside Gate 1.</small></div></a>
       </div>
     </div>
     <div class="section">
