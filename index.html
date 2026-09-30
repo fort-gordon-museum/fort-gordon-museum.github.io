@@ -1238,8 +1238,6 @@ a.cover:hover, a.cover:focus-visible{border-color:var(--gold);}
       <p class="room-dek">The full order of battle of the Signal Regiment — commands down to detachments — with each unit's activation date, drawn from the museum's own roster, plus featured histories of the 1st Signal Brigade and the 501st Signal Battalion.</p>
     </div>
 
-    <div class="patch-row" id="command-patches"><!-- filled by JS --></div>
-
     <div class="section">
       <h3>Signal Commands</h3>
       <p class="lede">The six Signal Commands are the Army's largest communications formations. They oversee brigades, battalions, and other units, and theater Signal Commands are typically led by one- or two-star generals. Select a patch to read the unit's official lineage.</p>
@@ -3400,25 +3398,6 @@ a.cover:hover, a.cover:focus-visible{border-color:var(--gold);}
       var panel = room.querySelector('#sub-'+btn.getAttribute('data-sub'));
       if (panel) panel.classList.add('active');
     });
-  });
-
-  // ---- command gallery patches ----
-  var patchRow = document.getElementById('command-patches');
-  var patches = [
-    {img:'patch_7th', lbl:'7th Signal Command'},
-    {img:'patch_1', lbl:'Signal Regiment insignia'},
-    {img:'patch_2', lbl:'Signal Regiment insignia'},
-    {img:'patch_dragon', lbl:'Signal Regiment insignia'},
-    {img:'patch_5', lbl:'Signal Regiment insignia'},
-    {img:'patch_3', lbl:'Signal Regiment insignia'},
-    {img:'patch_4', lbl:'Signal Regiment insignia'}
-  ];
-  patches.forEach(function(p){
-    if (!IMAGES[p.img]) return;
-    var d = document.createElement('div');
-    d.className = 'patch';
-    d.innerHTML = '<img src="'+IMAGES[p.img]+'" alt="'+p.lbl+'"><div class="lbl">'+p.lbl+'</div>';
-    patchRow.appendChild(d);
   });
 
   // ---- lineage links (only pages the museum's slide deck links to) ----
