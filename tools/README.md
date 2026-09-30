@@ -66,3 +66,43 @@ unit to the roster, add its CMH filename to **both** `LINEAGE_PAGES` and
 
 Styling lives in `lineage/lineage.css` and mirrors the design tokens at the top
 of `index.html`. If the museum's palette changes, change both.
+
+## Unit Ready Room
+
+Every unit page has a **Unit Ready Room** tile under its title: photos, orders,
+articles, films, magazine pages and stories about that unit, grouped by year with
+a year filter. Units with nothing filed yet show an invitation and a pre-addressed
+"Suggest material" email to the executive director.
+
+The content lives in one file, **`lineage/readyroom.json`**, keyed by the unit's
+lineage file name without `.htm` (`0501scbn` for `0501scbn.htm`). Adding material
+needs no rebuild: add an entry and commit.
+
+```json
+"0501scbn": [
+  {
+    "year": 2004,
+    "kind": "Photo",
+    "title": "Lt. Col. Welton Chase, Jr. furls the 501st's colors, Mosul",
+    "url": "https://www.defense.gov/observe/photo-gallery/igphoto/2001084839/",
+    "source": "U.S. Department of Defense, Sgt. Robert Woodward",
+    "date": "22 Jan 2004",
+    "note": "Optional one-line note."
+  }
+]
+```
+
+- `year` is the year the material is **about**; use `null` for ongoing things such
+  as an association's website. The page sorts years and lists `null` last as
+  "Ongoing".
+- `kind` is a short label: Exhibit, Article, Photo, Video, Magazine, Memorial,
+  Record, Association, Oral history, Document.
+- `url` may be external (opens in a new tab) or relative to `lineage/`, such as
+  `../heritage/issue-3.html#p-12` for a magazine page or
+  `../index.html#unit-501st-signal-battalion` for a section of the museum. The
+  museum opens the room holding any element id given after `#`.
+- Only add material the museum may show: public records, the Society's own
+  publications, or items whose owners have given permission.
+
+The tile markup and `readyroom.js` are part of the page template in
+`gen-lineage.pl`, so regenerating the pages keeps them.

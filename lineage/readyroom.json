@@ -1,0 +1,122 @@
+{
+  "_about": "Unit Ready Room entries, keyed by lineage file name without .htm (e.g. 0501scbn). Each entry: year (the year the material is about, or null for ongoing), kind (Exhibit, Article, Photo, Video, Magazine, Memorial, Record, Association, Oral history, Document), title, url (relative links are to this lineage folder), source, and optional date and note. Entries are sorted by year on the page; order within a year is kept as written.",
+  "units": {
+    "0001scbde": [
+      {
+        "year": 1966,
+        "kind": "Exhibit",
+        "title": "1st Signal Brigade: every commander and command sergeant major since activation",
+        "url": "../index.html#unit-1st-signal-brigade",
+        "source": "Virtual museum, Command Gallery",
+        "date": "1 Apr 1966 to today"
+      },
+      {
+        "year": 2020,
+        "kind": "Record",
+        "title": "COL Anne-Marie Wiersgalla, brigade commander 2020–2022: official biography",
+        "url": "https://www.gomo.army.mil/public/Biography/usa-12302/annemarier-wiersgalla",
+        "source": "General Officer Management Office"
+      },
+      {
+        "year": null,
+        "kind": "Association",
+        "title": "1st Signal Brigade Association: leader photographs and brigade history",
+        "url": "https://1sba.wildapricot.org/page-1858144",
+        "source": "1st Signal Brigade Association"
+      }
+    ],
+    "0112scbn": [
+      {
+        "year": 1986,
+        "kind": "Magazine",
+        "title": "“No Ordinary Signal Unit”: the 112th Signal Battalion (Special Operations) (Airborne)",
+        "url": "../heritage/issue-3.html#p-12",
+        "source": "Heritage, Issue 3",
+        "date": "Summer–Fall 2021",
+        "note": "Continues on pages 14 and 19–25."
+      },
+      {
+        "year": 1986,
+        "kind": "Document",
+        "title": "Activation ceremony program, Fort Bragg, 26 September 1986",
+        "url": "../heritage/issue-3.html#p-14",
+        "source": "Heritage, Issue 3 (courtesy of William D. Childs)",
+        "date": "26 Sep 1986"
+      }
+    ],
+    "0501scbn": [
+      {
+        "year": 2003,
+        "kind": "Exhibit",
+        "title": "The 501st in Operation Iraqi Freedom",
+        "url": "../index.html#unit-501st-signal-battalion",
+        "source": "Virtual museum, Command Gallery",
+        "date": "2003–2004"
+      },
+      {
+        "year": 2003,
+        "kind": "Article",
+        "title": "Information Technology Drives Tip of Airborne Spear",
+        "url": "https://www.afcea.org/signal-media/information-technology-drives-tip-airborne-spear",
+        "source": "AFCEA SIGNAL Magazine, Robert K. Ackerman",
+        "date": "Jun 2003"
+      },
+      {
+        "year": 2003,
+        "kind": "Article",
+        "title": "Revised Helmet Patch Immortalizes World War II Troops",
+        "url": "https://www.dvidshub.net/news/533152/revised-helmet-patch-immortalizes-world-war-ii-troops",
+        "source": "American Forces Press Service, Pfc. Chris Jones",
+        "date": "6 Oct 2003"
+      },
+      {
+        "year": 2003,
+        "kind": "Memorial",
+        "title": "Spc. Maurice J. Johnson, Company C",
+        "url": "https://thefallen.militarytimes.com/army-spc-maurice-j-johnson/256882",
+        "source": "Military Times, Honor the Fallen",
+        "date": "1 Nov 2003"
+      },
+      {
+        "year": 2004,
+        "kind": "Article",
+        "title": "Signal Battalion Soldiers Move From Mountaintop",
+        "url": "https://www.dvidshub.net/news/533665/signal-battalion-soldiers-move-mountaintop",
+        "source": "American Forces Press Service, Spc. Joshua Hutcheson",
+        "date": "8 Jan 2004"
+      },
+      {
+        "year": 2004,
+        "kind": "Photo",
+        "title": "101st Airborne Soldiers Slingload Humvee for Redeployment",
+        "url": "https://www.dvidshub.net/image/9161314/101st-airborne-soldiers-slingload-humvee-redeployment",
+        "source": "DVIDS, Spc. Joshua Hutcheson",
+        "date": "8 Jan 2004"
+      },
+      {
+        "year": 2004,
+        "kind": "Photo",
+        "title": "Lt. Col. Welton Chase, Jr. furls the 501st's colors, Mosul",
+        "url": "https://www.defense.gov/observe/photo-gallery/igphoto/2001084839/",
+        "source": "U.S. Department of Defense, Sgt. Robert Woodward",
+        "date": "22 Jan 2004"
+      },
+      {
+        "year": 2021,
+        "kind": "Magazine",
+        "title": "Honor the Fallen: Army Spc. Maurice J. Johnson",
+        "url": "../heritage/issue-2.html#p-17",
+        "source": "Heritage, Issue 2",
+        "date": "Spring 2021"
+      },
+      {
+        "year": 2026,
+        "kind": "Exhibit",
+        "title": "Reactivated at Fort Campbell, Kentucky",
+        "url": "../index.html#unit-501st-signal-battalion",
+        "source": "Virtual museum, Command Gallery",
+        "date": "5 Jun 2026"
+      }
+    ]
+  }
+}

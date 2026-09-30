@@ -350,6 +350,9 @@ ul.cmds li:last-child{margin-bottom:0; border-left-color:var(--gold);}
 .tstop .yr{font-family:var(--mono); color:var(--gold-bright); font-size:14px; margin-bottom:6px;}
 .tstop .lbl{font-family:var(--serif); font-size:16px; font-weight:600; max-width:180px; margin:0 auto;}
 
+/* deep-linked sections land below the sticky top bar */
+.room [id]{scroll-margin-top:110px;}
+
 /* dated milestones under the logo strip */
 .chron{list-style:none; margin:10px 0 0; padding:0 0 0 22px; border-left:1px solid var(--hair); max-width:680px;}
 .chron li{position:relative; padding:0 0 22px 18px;}
@@ -3346,6 +3349,23 @@ a.cover:hover, a.cover:focus-visible{border-color:var(--gold);}
     var el = e.target.closest('[data-goto]');
     if (el){ goto(el.getAttribute('data-goto'), el.getAttribute('data-avsub')); }
   });
+
+  // Deep links: index.html#room-name opens that room, and #some-section-id
+  // opens the room holding that section (and its tab, if any) and scrolls to it.
+  function gotoHash(){
+    var id = decodeURIComponent(location.hash.slice(1));
+    if (!id) return;
+    var target = document.getElementById(id);
+    if (!target && document.getElementById('room-' + id)){ goto(id); return; }
+    if (!target) return;
+    var room = target.closest('.room');
+    if (!room) return;
+    var panel = target.closest('.subpanel');
+    goto(room.id.replace(/^room-/, ''), panel ? panel.id.replace(/^sub-/, '') : null);
+    setTimeout(function(){ target.scrollIntoView({block:'start', behavior:'instant'}); }, 0);
+  }
+  window.addEventListener('hashchange', gotoHash);
+  setTimeout(gotoHash, 0); // after the rest of this script has wired up the tabs
 
   // Anything that navigates must work from the keyboard too. Buttons and links
   // already do; the masthead and the SVG floor plan are neither, so give them

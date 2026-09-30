@@ -70,6 +70,55 @@ ul.camps li{
   margin:16px 0 8px; padding-left:16px; border-left:2px dotted var(--hair);
 }
 
+/* ---- unit ready room: linked material from any year ---- */
+.ready{
+  margin:0 0 34px; background:var(--panel); border:1px solid var(--hair);
+  border-top:3px solid var(--gold); border-radius:2px; padding:20px 22px 16px;
+}
+.rr-head{display:flex; justify-content:space-between; align-items:flex-start; gap:14px; flex-wrap:wrap;}
+.rr-kicker{font-family:var(--mono); font-size:11px; letter-spacing:1.4px; text-transform:uppercase; color:var(--gold);}
+.ready h2.rr-title{
+  font-family:var(--serif); font-size:20px; font-weight:600; letter-spacing:0; text-transform:none;
+  color:var(--paper-2); margin:4px 0 0; padding:0; border:0;
+}
+.rr-count{font-family:var(--mono); font-size:11px; color:var(--muted); letter-spacing:0.6px; white-space:nowrap; padding-top:3px;}
+.rr-years{display:flex; flex-wrap:wrap; gap:6px; margin:16px 0 4px;}
+.rr-years[hidden]{display:none;}
+.rr-chip{
+  font-family:var(--mono); font-size:11px; letter-spacing:0.6px; cursor:pointer;
+  background:var(--ink); color:var(--muted); border:1px solid var(--hair); border-radius:2px; padding:5px 10px;
+}
+.rr-chip:hover{color:var(--paper); border-color:var(--gold);}
+.rr-chip[aria-pressed="true"]{background:var(--gold); border-color:var(--gold); color:var(--ink); font-weight:500;}
+.rr-body{margin-top:12px;}
+.rr-year{display:grid; grid-template-columns:76px 1fr; gap:4px 14px; padding:10px 0; border-top:1px solid rgba(255,255,255,0.06);}
+.rr-year:first-child{border-top:0;}
+.rr-year[hidden]{display:none;}
+.rr-ylabel{font-family:var(--mono); font-size:15px; color:var(--gold-bright); padding-top:7px;}
+.rr-items{display:flex; flex-direction:column; gap:6px;}
+.rr-item{
+  display:flex; gap:12px; align-items:flex-start; text-decoration:none; color:var(--paper);
+  padding:8px 10px; border:1px solid transparent; border-radius:2px;
+}
+.rr-item:hover{background:rgba(201,162,39,0.10); border-color:var(--hair);}
+.rr-kind{
+  flex:none; min-width:74px; text-align:center; margin-top:2px;
+  font-family:var(--mono); font-size:9.5px; letter-spacing:1px; text-transform:uppercase;
+  color:var(--gold); border:1px solid rgba(201,162,39,0.45); border-radius:2px; padding:2px 6px;
+}
+.rr-main{display:flex; flex-direction:column; min-width:0;}
+.rr-t{font-size:15.5px; line-height:1.35;}
+.rr-item:hover .rr-t{color:var(--gold-bright);}
+.rr-m{font-family:var(--sans); font-size:12px; color:var(--muted); margin-top:2px;}
+.rr-n{font-family:var(--sans); font-size:12px; color:var(--muted); font-style:italic;}
+.rr-empty{font-family:var(--sans); font-size:14px; color:var(--muted); margin:14px 0 4px;}
+.rr-add{
+  font-family:var(--sans); font-size:12.5px; color:var(--muted);
+  margin:14px 0 0; padding-top:12px; border-top:1px solid var(--hair);
+}
+.rr-add a{color:var(--gold-bright); font-weight:600; text-decoration:none; margin-right:6px;}
+.rr-add a:hover{text-decoration:underline;}
+
 /* ---- provenance ---- */
 footer.src{
   margin-top:46px; padding-top:18px; border-top:1px solid var(--hair);
@@ -106,4 +155,9 @@ footer.src strong{color:var(--paper);  font-weight:600;}
   .entry,.dec,.qual,ul.camps li{padding-left:12px;}
   .rows a{flex-direction:column; gap:3px;}
   .rows .meta{text-align:left;}
+  .ready{padding:16px 14px 12px;}
+  .rr-year{grid-template-columns:1fr;}
+  .rr-ylabel{padding-top:0;}
+  .rr-item{padding:7px 4px; gap:10px;}
+  .rr-kind{min-width:64px;}
 }
