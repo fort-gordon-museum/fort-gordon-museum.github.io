@@ -231,7 +231,7 @@ for my $file (@files) {
     <div class="kicker">Lineage and Honors</div>
     <h1>$uesc</h1>
     <p class="asof">$aesc</p>
-    <section class="ready" id="ready-room" aria-labelledby="rr-h">
+$body    <section class="ready" id="ready-room" aria-labelledby="rr-h">
       <div class="rr-head">
         <div>
           <div class="rr-kicker">Unit Ready Room</div>
@@ -243,7 +243,7 @@ for my $file (@files) {
       <div class="rr-body" id="rr-body"><p class="rr-empty">Nothing has been filed in this unit's ready room yet. Photos, orders, articles, films and stories from any year belong here.</p></div>
       <p class="rr-add"><a id="rr-suggest" href="mailto:execdirector\@fghms.com?subject=Unit%20Ready%20Room">Suggest material for this unit &#8594;</a>Send a link or a scan, and say which year it comes from.</p>
     </section>
-$body      <footer class="src">$src</footer>
+      <footer class="src">$src</footer>
   </div>
 <script src="readyroom.js" defer></script>
 </body>

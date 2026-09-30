@@ -69,7 +69,7 @@ of `index.html`. If the museum's palette changes, change both.
 
 ## Unit Ready Room
 
-Every unit page has a **Unit Ready Room** tile under its title: photos, orders,
+Every unit page has a **Unit Ready Room** tile below its lineage record: photos, orders,
 articles, films, magazine pages and stories about that unit, grouped by year with
 a year filter. Units with nothing filed yet show an invitation and a pre-addressed
 "Suggest material" email to the executive director.

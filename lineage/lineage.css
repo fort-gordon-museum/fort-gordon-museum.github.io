@@ -72,7 +72,7 @@ ul.camps li{
 
 /* ---- unit ready room: linked material from any year ---- */
 .ready{
-  margin:0 0 34px; background:var(--panel); border:1px solid var(--hair);
+  margin:44px 0 0; background:var(--panel); border:1px solid var(--hair);
   border-top:3px solid var(--gold); border-radius:2px; padding:20px 22px 16px;
 }
 .rr-head{display:flex; justify-content:space-between; align-items:flex-start; gap:14px; flex-wrap:wrap;}
