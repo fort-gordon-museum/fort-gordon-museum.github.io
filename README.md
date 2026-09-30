@@ -13,14 +13,15 @@ Signal Regiment, and in the Army's Cyber Corps.
 
 The Signal Corps Museum on post closed on 25 February 2021 when base construction
 took its building, and the collection has been in storage since. The Society is
-raising $250,000 to buy and renovate a building outside the gates of Fort
-Eisenhower. This virtual museum keeps the collection open to the public meanwhile.
+raising funds to buy and renovate a building outside the gates of Fort
+Eisenhower; $250,000 has been donated so far. This virtual museum keeps the collection open to the public meanwhile.
 
 ## What is here
 
 | Path | What it is |
 |---|---|
-| `index.html` | The museum itself — a single self-contained page. Images are embedded as base64, so there are no external asset requests. |
+| `index.html` | The museum itself: a single page whose rooms switch in place. Its images live in `assets/`. |
+| `assets/` | Photographs, portraits, patches and magazine pages used by the museum rooms. |
 | `lineage/` | Mirror of the official lineage, campaign participation credit, and unit citations for the 171 Signal Regiment units in the Command Gallery roster, plus a filterable index. |
 | `heritage/` | The Heritage magazine reading room: every issue as readable text and page scans, plus a PDF download of each. |
 | `tools/` | Fetch and build scripts for the lineage mirror and the Heritage reading room (`tools/heritage/`), each with its own README. |
